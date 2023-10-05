@@ -1,0 +1,720 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fixed w-full h-full z-[999999] bg-[#000]" style="display: block;opacity: 1;" id="load_overlay">
+        <div class="flex h-screen items-center">
+            <div class="loader mx-auto">
+               
+            </div>
+            <div class="absolute bottom-[20%] car-run">
+                <img src="image/load/model3.webp" width="200px"  alt="" srcset="">
+                <div class="absolute bottom-[1%] left-[14%] animate-spin duration-75 car-run">
+                    <img src="image/load/wheel.png" width="27px"  alt="" srcset="">
+                </div>
+                <div class="absolute bottom-[1%] left-[75%]  animate-spin duration-75 car-run">
+                    <img src="image/load/wheel.png" width="27px"  alt="" srcset="">
+                </div>
+            </div>
+        </div>
+       
+    </div>
+  <div class="container h-full w-full mx-auto">
+   <div class="h-full w-full m-auto relative ">
+        <div class="hidden sm:flex flex-col w-full h-full">
+            <div class="relative mt-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1030" height="87" viewBox="0 0 1030 87" fill="none" class="svg-line rotate-180">
+                    <g filter="url(#filter0_f_0_35)">
+                      <path d="M1017.5 17L784.055 63.4048C751.953 69.7862 719.302 73 686.571 73L349.331 73C315.296 73 281.35 69.5249 248.021 62.6287L13 14" stroke="url(#paint0_linear_0_35)" stroke-opacity="0.7" stroke-width="4"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_f_0_35" x="0.594788" y="0.0414734" width="1029.3" height="86.9585" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="6" result="effect1_foregroundBlur_0_35"/>
+                      </filter>
+                      <linearGradient id="paint0_linear_0_35" x1="501.5" y1="136" x2="501.459" y2="32.5" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#B8FF01"/>
+                        <stop offset="1" stop-color="#B8FF01" stop-opacity="0"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+            </div>
+            <div class="relative w-full h-full">
+                <div>
+                    <svg width="1512" height="716" viewBox="0 0 1512 716" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-responsive">
+                        <path d="M42 449.377L129.589 466.703C133.716 467.519 137.913 465.665 140.088 462.064L220.827 328.431C221.923 326.616 223.568 325.196 225.524 324.377L286 299.062" stroke="white" stroke-opacity="0.25"/>
+                        <path d="M243.5 471.062L175 644.062" stroke="#B8FF00" stroke-opacity="0.4" stroke-width="4"/>
+                        <path d="M266 600.062L364.184 527.038C365.909 525.755 368.002 525.062 370.152 525.062H419" stroke="white" stroke-opacity="0.45" stroke-width="0.5"/>
+                        <path d="M133 462.063L124 259.062" stroke="white" stroke-opacity="0.45" stroke-width="0.5"/>
+                        <path d="M89 251.062L317.374 303.858C322.709 305.091 326.06 310.385 324.892 315.735L246.623 674.062" stroke="white" stroke-opacity="0.25" stroke-width="1.5"/>
+                        <path d="M358.023 656.062L361.494 612.085M64 341.062L369.264 401.216C374.244 402.197 377.699 406.754 377.299 411.814L361.494 612.085M256.088 630.494L361.494 612.085" stroke="white" stroke-opacity="0.25" stroke-width="1.5"/>
+                        <path d="M202 556.562L159.5 628.062" stroke="white" stroke-opacity="0.45" stroke-width="0.5"/>
+                        <path d="M238 547.062L182.5 648.062M277 535.562L212 664.562" stroke="white" stroke-opacity="0.45" stroke-width="0.5"/>
+                        <path d="M77 295.062L182.478 311.914C188.331 312.849 192.091 318.641 190.563 324.367L128.148 558.28C126.161 565.728 132.993 572.53 140.432 570.508L416 495.637" stroke="white" stroke-opacity="0.25" stroke-width="1.5"/>
+                        <path d="M451 635.062V349.063C451 343.54 446.523 339.062 441 339.062H282" stroke="white" stroke-opacity="0.25" stroke-width="1.5"/>
+                        <path d="M302.5 420.062H376.5" stroke="white" stroke-opacity="0.45" stroke-width="0.5"/>
+                        <path d="M297 451.062L375 436.062" stroke="white" stroke-opacity="0.45" stroke-width="0.5"/>
+                        <path d="M349 442.062L339 517.062" stroke="white" stroke-opacity="0.45" stroke-width="0.5"/>
+                        <path d="M164 423.062L254 540.062" stroke="white" stroke-opacity="0.45" stroke-width="0.5"/>
+                        <path d="M399 339.062L419.856 535.237M431 640.062L419.856 535.237M367 565.187L419.856 535.237" stroke="white" stroke-opacity="0.45" stroke-width="0.5"/>
+                        <path d="M50 393.062L164 423.062" stroke="white" stroke-opacity="0.45" stroke-width="0.5"/>
+                        <path d="M236 496.062L280.119 332.838C280.297 332.181 280.407 331.508 280.448 330.828L285 255.062" stroke="#B8FF01" stroke-width="5"/>
+                        <g filter="url(#filter0_d_105_12)">
+                        <path d="M177.782 519.679L241.313 469.727C241.916 469.252 242.811 469.635 242.913 470.412L253.005 546.901C253.144 547.953 251.799 548.456 251.205 547.575L228.1 513.268C227.876 512.935 227.482 512.765 227.095 512.834L178.588 521.472C177.568 521.653 176.968 520.319 177.782 519.679Z" fill="#B8FF01"/>
+                        </g>
+                        <path d="M285.5 218C281.217 218.005 277.11 219.709 274.081 222.738C271.053 225.766 269.349 229.873 269.344 234.156C269.339 237.657 270.482 241.062 272.599 243.85C272.599 243.85 273.039 244.43 273.111 244.514L285.5 259.125L297.895 244.507C297.959 244.429 298.402 243.85 298.402 243.85L298.403 243.846C300.518 241.059 301.661 237.655 301.656 234.156C301.651 229.873 299.947 225.766 296.919 222.738C293.89 219.709 289.783 218.005 285.5 218V218ZM285.5 240.031C284.338 240.031 283.202 239.687 282.236 239.041C281.27 238.396 280.517 237.478 280.072 236.405C279.628 235.331 279.511 234.15 279.738 233.01C279.965 231.87 280.524 230.824 281.346 230.002C282.167 229.18 283.214 228.621 284.354 228.394C285.493 228.167 286.675 228.284 287.748 228.728C288.822 229.173 289.739 229.926 290.385 230.892C291.03 231.858 291.375 232.994 291.375 234.156C291.373 235.714 290.753 237.207 289.652 238.308C288.551 239.41 287.058 240.029 285.5 240.031V240.031Z" fill="#F50505"/>
+                        <g filter="url(#filter1_f_105_12)">
+                        <path d="M236 496.062L280.119 332.838C280.297 332.181 280.407 331.508 280.448 330.828L285 255.062" stroke="#B8FF01" stroke-width="5"/>
+                        </g>
+                        <g filter="url(#filter2_f_105_12)">
+                        <path d="M177.782 519.679L241.313 469.727C241.916 469.252 242.811 469.635 242.913 470.412L253.005 546.901C253.144 547.953 251.799 548.456 251.205 547.575L228.1 513.268C227.876 512.935 227.482 512.765 227.095 512.834L178.588 521.472C177.568 521.653 176.968 520.319 177.782 519.679Z" class="fill-map"/>
+                        </g>
+                        <path opacity="0.5" d="M494.548 72.1794L264.96 25.8229C192.916 11.2765 121.889 54.917 102.31 125.759L19.5359 425.253C7.30047 469.523 17.558 516.979 46.985 552.244L128.928 650.444C162.519 690.7 215.789 708.813 266.957 697.376L493.181 646.814C503.206 644.574 513.446 643.443 523.718 643.443H956.002C966.154 643.443 976.277 644.548 986.19 646.737L1218.79 698.102C1268.77 709.137 1320.78 692.026 1354.44 653.478L1444.12 550.771C1474.13 516.4 1485.51 469.559 1474.61 425.25L1401.65 128.62C1383.9 56.4617 1312.87 10.741 1239.84 24.468L984.094 72.5393C975.567 74.1422 966.909 74.9488 958.232 74.9488H522.256C512.951 74.9488 503.669 74.0211 494.548 72.1794Z" fill="url(#paint0_linear_105_12)" stroke="url(#paint1_linear_105_12)" stroke-width="5"/>
+                        <g opacity="0.5" filter="url(#filter3_b_105_12)">
+                        <path d="M514.548 72.1794L284.96 25.8229C212.916 11.2765 141.889 54.917 122.31 125.759L39.5359 425.253C27.3005 469.523 37.558 516.979 66.985 552.244L148.928 650.444C182.519 690.7 235.789 708.813 286.957 697.376L513.181 646.814C523.206 644.574 533.446 643.443 543.718 643.443H976.002C986.154 643.443 996.277 644.548 1006.19 646.737L1238.79 698.102C1288.77 709.137 1340.78 692.026 1374.44 653.478L1464.12 550.771C1494.13 516.4 1505.51 469.559 1494.61 425.25L1421.65 128.62C1403.9 56.4617 1332.87 10.741 1259.84 24.468L1004.09 72.5393C995.567 74.1422 986.909 74.9488 978.232 74.9488H542.256C532.951 74.9488 523.669 74.0211 514.548 72.1794Z" fill="url(#paint2_linear_105_12)" fill-opacity="0.7"/>
+                        <path d="M514.548 72.1794L284.96 25.8229C212.916 11.2765 141.889 54.917 122.31 125.759L39.5359 425.253C27.3005 469.523 37.558 516.979 66.985 552.244L148.928 650.444C182.519 690.7 235.789 708.813 286.957 697.376L513.181 646.814C523.206 644.574 533.446 643.443 543.718 643.443H976.002C986.154 643.443 996.277 644.548 1006.19 646.737L1238.79 698.102C1288.77 709.137 1340.78 692.026 1374.44 653.478L1464.12 550.771C1494.13 516.4 1505.51 469.559 1494.61 425.25L1421.65 128.62C1403.9 56.4617 1332.87 10.741 1259.84 24.468L1004.09 72.5393C995.567 74.1422 986.909 74.9488 978.232 74.9488H542.256C532.951 74.9488 523.669 74.0211 514.548 72.1794Z" stroke="url(#paint3_linear_105_12)" stroke-width="5"/>
+                        </g>
+                        <path opacity="0.7" d="M1275.5 87L1042.06 133.405C1009.95 139.786 977.302 143 944.571 143L607.331 143C573.296 143 539.35 139.525 506.021 132.629L271 84" stroke="url(#paint4_linear_105_12)" stroke-width="3"/>
+                        <g filter="url(#filter4_f_105_12)">
+                        <path d="M1275.5 82L1042.06 128.405C1009.95 134.786 977.302 138 944.571 138L607.331 138C573.296 138 539.35 134.525 506.021 127.629L271 79" stroke="url(#paint5_linear_105_12)" stroke-opacity="0.7" stroke-width="4"/>
+                        </g>
+                        <path opacity="0.5" d="M762.04 494C840.189 494 903.605 461.543 903.683 421.503C903.761 381.46 840.475 349 762.325 349C684.175 349 620.761 381.46 620.683 421.503C620.605 461.543 683.896 494 762.04 494Z" stroke="url(#paint6_linear_105_12)" stroke-width="3"/>
+                        <g opacity="0.5" filter="url(#filter5_f_105_12)">
+                        <path d="M762.524 514C849.234 514 919.597 475.499 919.683 428.003C919.769 380.504 849.551 342 762.841 342C676.13 342 605.77 380.504 605.683 428.003C605.597 475.499 675.821 514 762.524 514Z" stroke="url(#paint7_linear_105_12)" stroke-width="2"/>
+                        </g>
+                        <path opacity="0.5" d="M989.683 596L839.683 209" stroke="url(#paint8_linear_105_12)" stroke-opacity="0.7"/>
+                        <path opacity="0.5" d="M524.751 596.459L691.683 206" stroke="url(#paint9_linear_105_12)" stroke-opacity="0.7"/>
+                        <path opacity="0.5" d="M628.407 567.459L748.656 275" stroke="url(#paint10_linear_105_12)" stroke-opacity="0.7"/>
+                        <path opacity="0.5" d="M876.91 566.786L788.683 263.127" stroke="url(#paint11_linear_105_12)" stroke-opacity="0.7"/>
+                        <g opacity="0.5" filter="url(#filter6_f_105_12)">
+                        <path d="M762.04 494C840.189 494 903.605 461.543 903.683 421.503C903.761 381.46 840.475 349 762.325 349C684.175 349 620.761 381.46 620.683 421.503C620.605 461.543 683.896 494 762.04 494Z" stroke="url(#paint12_linear_105_12)" stroke-width="3"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_105_12" x="177.403" y="469.519" width="83.6124" height="86.5084" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="4" dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_105_12"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_105_12" result="shape"/>
+                        </filter>
+                        <filter id="filter1_f_105_12" x="223.587" y="244.913" width="73.9089" height="261.802" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_105_12"/>
+                        </filter>
+                        <filter id="filter2_f_105_12" x="167.403" y="459.519" width="95.6124" height="98.5084" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_105_12"/>
+                        </filter>
+                        <filter id="filter3_b_105_12" x="-968.025" y="-980.463" width="3469.19" height="2684.36" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="500"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_105_12"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_105_12" result="shape"/>
+                        </filter>
+                        <filter id="filter4_f_105_12" x="258.595" y="65.0415" width="1029.3" height="86.9585" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="6" result="effect1_foregroundBlur_105_12"/>
+                        </filter>
+                        <filter id="filter5_f_105_12" x="600.683" y="337" width="324" height="182" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_105_12"/>
+                        </filter>
+                        <filter id="filter6_f_105_12" x="611.183" y="339.5" width="302" height="164" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="4" result="effect1_foregroundBlur_105_12"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_105_12" x1="38.5" y1="401.154" x2="734.212" y2="525.969" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#3E3D3D"/>
+                        <stop offset="1" stop-color="#3E3D3D" stop-opacity="0"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_105_12" x1="-356" y1="907.46" x2="698.209" y2="373.396" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.353463" stop-color="#B8FF01" class="border-stop-color"/>
+                        <stop offset="1" stop-color="white" stop-opacity="0"/>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_105_12" x1="1473" y1="304.513" x2="651.497" y2="302.045" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#3E3D3D"/>
+                        <stop offset="1" stop-color="#3E3D3D" stop-opacity="0"/>
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_105_12" x1="1512" y1="635.161" x2="1230.52" y2="313.186" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.353463" stop-color="#B8FF01" class="border-stop-color"/>
+                        <stop offset="0.841638" stop-color="white" stop-opacity="0"/>
+                        </linearGradient>
+                        <linearGradient id="paint4_linear_105_12" x1="759.5" y1="206" x2="759.459" y2="102.5" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#B8FF01"/>
+                        <stop offset="1" stop-color="#B8FF01" stop-opacity="0"/>
+                        </linearGradient>
+                        <linearGradient id="paint5_linear_105_12" x1="759.5" y1="201" x2="759.459" y2="97.5" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#B8FF01"/>
+                        <stop offset="1" stop-color="#B8FF01" stop-opacity="0"/>
+                        </linearGradient>
+                        <linearGradient id="paint6_linear_105_12" x1="762.182" y1="399.591" x2="762.182" y2="494" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#B8FF01" stop-opacity="0.09"/>
+                        <stop offset="1" stop-color="#B8FF01"/>
+                        </linearGradient>
+                        <linearGradient id="paint7_linear_105_12" x1="762.682" y1="402.012" x2="762.682" y2="514" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#B8FF01" stop-opacity="0.09"/>
+                        <stop offset="1" stop-color="#B8FF01"/>
+                        </linearGradient>
+                        <linearGradient id="paint8_linear_105_12" x1="966.183" y1="537" x2="839.683" y2="209" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" class="stop-right2"/>
+                        <stop offset="0.909234" stop-color="white" class="stop-right2" stop-opacity="0"/>
+                        </linearGradient>
+                        <linearGradient id="paint9_linear_105_12" x1="523.683" y1="610" x2="709.183" y2="248" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white"  class="stop-left2" />
+                        <stop offset="1" stop-color="white"  class="stop-left2" stop-opacity="0"/>
+                        </linearGradient>
+                        <linearGradient id="paint10_linear_105_12" x1="627.985" y1="577.75" x2="767.738" y2="309.589" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" class="stop-left1"/>
+                        <stop offset="1" stop-color="white"  class="stop-left1" stop-opacity="1"/>
+                        </linearGradient>
+                        <linearGradient id="paint11_linear_105_12" x1="882.994" y1="575.096" x2="825.163" y2="278.285" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" class="stop-right1" />
+                        <stop offset="1" stop-color="white"  class="stop-right1" stop-opacity="1"/>
+                        </linearGradient>
+                        <linearGradient id="paint12_linear_105_12" x1="762.182" y1="399.591" x2="762.182" y2="494" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#B8FF01" stop-opacity="0.09"/>
+                        <stop offset="1" stop-color="#B8FF01"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>             
+                </div> 
+               
+
+                <div class="absolute sm:top-[6%] sm:left-[13%] md:top-[6%] md:left-[13%] lg:top-[6%] lg:left-[13%] xl:top-[6%] xl:left-[13%]">
+                    <h4 class="color-main sm:text-[12px] md:text-[16px] lg:text-[18px] xl:text-[20px]  font-bold">PRICE</h4>
+                    <span class="text-[#fff] sm:text-[10px] md:text-[11px] lg:text-[13px] xl:text-[15px] font-thin"  id="model_price">1,699,000 THB.</span>
+                </div>
+                <div class="absolute sm:top-[12%] md:top-[14%] lg:top-[15%] left-[calc(50%-100px)] w-[200px] text-center">
+                    <span class="text-[#fff] sm:text-[12px] md:text-[16px] lg:text-[18px] xl:text-[20px] font-bold tracking-[5px]" id="model_name">Loading..</span>
+                </div>
+                <div class="absolute sm:top-[17%] sm:left-[15%] md:top-[19%] md:left-[15%] lg:top-[19%] lg:left-[15%]" id="display-brand1" style="display: none;">
+                    <img src="image/logo/tesla.svg" class="w-[60px] lg:w-[80px] xl:w-[100px]" alt="LOGO" srcset="">
+                </div>
+                <div class="absolute sm:top-[23%] sm:left-[15%] md:top-[24%] md:left-[15%] lg:top-[24%] lg:left-[15%]" id="display-brand2" style="display: none;">
+                    <img src="image/logo/tesla.svg" class="w-[60px] lg:w-[80px] xl:w-[100px]" alt="LOGO" srcset="">
+                </div>
+                <div class="absolute sm:top-[24%] sm:right-[5%] md:top-[24%] md:right-[5%] lg:top-[24%] lg:right-[5%]" id="display-kmh">
+                    <img src="image/200.svg" class="w-[80px] sm:w-[170px] md:w-[210px] lg:w-[300px] xl:w-[345px]" alt="display" srcset="">
+                    <div class="absolute sm:top-[55%] md:top-[58%] lg:top-[58%] w-full text-center">
+                        <span class="text-[#fff] sm:text-[23px] md:text-[26px] lg:text-[28px] xl:text-[30px] font-bold" id="model_speed">0</span>
+                    </div>
+                </div>
+                <div class="absolute  sm:top-[36%] sm:right-[calc(50%-65px)] md:top-[32%] md:right-[calc(50%-90px)] lg:top-[35%] lg:right-[calc(50%-110px)] xl:right-[calc(50%-140px)]" id="display-car">
+                    <img src="image/car/teslay.png" class="sm:w-[130px] md:w-[180px] lg:w-[220px] xl:w-[280px] opacity-90 " alt="Car" srcset="">
+                </div>
+                <div class="absolute sm:bottom-[11%] md:bottom-[12%] lg:bottom-[15%] left-[calc(50%-100px)]">
+                    <a href="#" class="neon-green text-[10px] md:text-[14px]" onclick="openCloseMoreDetail()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        MORE DETAIL
+                      </a>
+                </div>
+
+               
+            </div>
+            <div class="relative">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1030" height="87" viewBox="0 0 1030 87" fill="none" class="svg-line">
+                    <g filter="url(#filter0_f_0_35)">
+                      <path d="M1017.5 17L784.055 63.4048C751.953 69.7862 719.302 73 686.571 73L349.331 73C315.296 73 281.35 69.5249 248.021 62.6287L13 14" stroke="url(#paint0_linear_0_35)" stroke-opacity="0.7" stroke-width="4"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_f_0_35" x="0.594788" y="0.0414734" width="1029.3" height="86.9585" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="6" result="effect1_foregroundBlur_0_35"/>
+                      </filter>
+                      <linearGradient id="paint0_linear_0_35" x1="501.5" y1="136" x2="501.459" y2="32.5" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#B8FF01"/>
+                        <stop offset="1" stop-color="#B8FF01" stop-opacity="0"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+            </div>
+
+            <div class="relative mt-[10px] mb-[50px]">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-slide">
+                        <img src="image/logo/tesla.svg" alt="Slide 1" width="150px" class="hover:scale-[0.9] ease-in-out duration-300">
+                      </div>
+                      <div class="carousel-slide">
+                        <img src="image/logo/porsche.svg" alt="Slide 1" width="150px" class="hover:scale-[0.9] ease-in-out duration-300">
+                      </div>
+                      <div class="carousel-slide">
+                        <img src="image/logo/volvo.png" alt="Slide 3" width="150px" class="hover:scale-[0.9] ease-in-out duration-300">
+                      </div>
+                      <div class="carousel-slide">
+                        <img src="image/logo/neta.svg" alt="Slide 2" width="150px" class="hover:scale-[0.9] ease-in-out duration-300">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="absolute left-[10%] top-[calc(50%-0px)]">
+                    <button class="prev-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                          </svg>
+                    </button>  
+                  </div>
+                  <div class="absolute right-[10%] top-[calc(50%-0px)]">
+                    <button class="next-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </button>
+                  </div>      
+            </div>
+        </div>
+        <div class="flex sm:hidden">
+            
+        </div>
+
+        <div id="model-popup" class="absolute z-[9999] top-[0px] p-2 sm:p-5 w-full block sm:hidden">
+            <div class="model-box w-full max-h-[550px] boder-model relative overflow-auto">
+                <div class="flex flex-col sm:flex-row h-full">
+                    <div class="h-full">
+                        <div class="flex flex-row sm:flex-col gap-6 mt-[20px]">
+                            <div class="mx-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" onclick="showMenu('#paint')" class="w-[25px] h-[25px] sm:w-[40px] sm:h-[40px] svg-menu" viewBox="0 0 16 16">
+                                    <path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                    <path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"/>
+                                  </svg>
+                            </div>
+                            <div class="mx-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" onclick="showMenu('#interior')" class="w-[25px] h-[25px] sm:w-[40px] sm:h-[40px] svg-menu"  version="1.1" id="Capa_1" viewBox="0 0 478.165 478.165" xml:space="preserve">
+                                    <g>
+                                        <path d="M43.678,169.368c14.463,2.806,25.418,15.561,25.418,30.832v41.203H228.93V85.554H52.788c-3.854,0-7.593,1.588-10.258,4.355   c-2.421,2.515-3.685,5.735-3.557,9.067c0.507,13.321,2.088,36.973,4.707,70.385L43.678,169.368z"/>
+                                        <path d="M440.48,189.084c-6.129,0-11.115,4.986-11.115,11.115v45.392c8.971,5.285,15.008,15.04,15.008,26.183v36.833   c0,2.489-0.158,4.948-0.88,7.221c-1.883,5.926-5.773,14.689-15.294,19.616l13.03,49.595c1.197,4.557,5.308,7.572,9.809,7.572   c0.853,0,1.721-0.108,2.586-0.336c5.421-1.424,8.661-6.974,7.237-12.394l-15.557-59.211h10.994c6.019,0,10.802-4.992,11.127-11.612   c1.297-26.445,9.775-100.909,10.741-109.347c-0.256-5.903-5.139-10.627-11.104-10.627H440.48z"/>
+                                        <path d="M11.104,189.084c-5.965,0-10.848,4.724-11.104,10.627c0.965,8.438,9.442,82.902,10.739,109.347   c0.325,6.62,5.109,11.612,11.128,11.612h10.992l-15.554,59.211c-1.424,5.421,1.817,10.97,7.237,12.394   c0.864,0.227,1.732,0.336,2.586,0.336c4.5,0,8.611-3.016,9.809-7.573l13.028-49.594c-8.813-6.659-14.183-14.397-15.294-19.608   c-0.498-2.335-0.882-4.737-0.882-7.23v-36.833c0-11.146,6.039-20.902,15.012-26.186v-45.389c0-6.129-4.986-11.115-11.115-11.115   H11.104z"/>
+                                        <path d="M409.069,200.199c0-15.268,10.952-28.021,25.412-30.83l-0.002-0.006c2.618-33.412,4.2-57.066,4.707-70.386   c0.127-3.333-1.137-6.553-3.559-9.068c-2.664-2.767-6.402-4.354-10.257-4.354H249.228v155.849h159.841V200.199z"/>
+                                        <path d="M414.002,261.7H64.158c-5.554,0-10.073,4.519-10.073,10.074v36.833c0,3.35,1.65,6.315,4.174,8.148l0.008-0.001   c0.041,0.03,0.076,0.065,0.117,0.095c1.636,1.15,3.626,1.832,5.774,1.832h349.844c2.147,0,4.135-0.68,5.771-1.829   c0.042-0.031,0.078-0.068,0.121-0.098l0.009,0.001c2.523-1.832,4.173-4.797,4.173-8.147v-36.833   C424.076,266.219,419.557,261.7,414.002,261.7z"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="mx-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" onclick="showMenu('#detail')" class="w-[25px] h-[25px] sm:w-[40px] sm:h-[40px] svg-menu"  viewBox="0 0 16 16">
+                                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                                    <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                                  </svg>
+                            </div>
+                            <div class="mx-auto">
+                                  <svg xmlns="http://www.w3.org/2000/svg" onclick="showMenu('#vdo')"  class="w-[25px] h-[25px] sm:w-[40px] svg-menu"viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
+                                  </svg>
+                            </div>
+                            <div class="mx-auto">
+                                <a href="http://" target="_blank" id="link_website_menu" >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-[25px] h-[25px] sm:w-[40px] sm:h-[40px] svg-menu" viewBox="0 0 16 16">
+                                    <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+                                    <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+                                  </svg>
+                                </a>
+                            </div>
+                            <div class="mx-auto hidden sm:block">
+                                <svg xmlns="http://www.w3.org/2000/svg"  onclick="openCloseMoreDetail()"  class="w-[25px] h-[25px] sm:w-[40px] sm:h-[40px] svg-menu"  viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                  </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#24272C] w-full boder-model rounded-[36px] p-1 sm:p-3 mx-auto">
+                        <div class="menu-popup" id="paint" style="display: flex;">
+                            <div class="mx-auto">
+                                <img src="image/car_color/teslay_black.png" class="w-full h-auto max-w-[500px]" alt="" id="img_paint">
+                                <div class="text-center">
+                                    <h4 class="text-[#fff] lg:text-[18px] xl:text-[20px]  font-bold">PAINT</h4>
+                                    <div class="mt-5" id="loop_paint">
+                                        <button class="rounded-[50%] bg-[#000] w-[30px] h-[30px] sm:w-[36px] sm:h-[36px] hover:opacity-90 mx-[5px]"></button>
+                                    </div>
+                                    <div id="show_custom_enable1">custom / check on <a href="http://" target="_blank" id="weblink_custom1">tesla website</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-popup" id="interior" style="display: none;">
+                            <div class="mx-auto">
+                                <img src="image/interior/teslay_white.png" class="mx-auto w-[80%] h-auto" alt="" id="interior_img">
+                                <div class="text-center mt-4">
+                                    <h4 class="text-[#fff] lg:text-[18px] xl:text-[20px]  font-bold">Interior</h4>
+                                    <div class="mt-5">
+                                        <div id="loop_interior">
+                                            <button class="rounded-[50%] bg-[#000] w-[30px] h-[30px] sm:w-[36px] sm:h-[36px] hover:opacity-90 mx-[5px]"></button>
+                                        </div>
+                                        <div id="show_custom_enable">custom / check on <a href="http://" target="_blank" id="weblink_custom">tesla website</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-popup" id="detail" style="display: none;">
+                            <div  id="detail-content" class="text-[14px]">
+
+                            </div>
+                        </div>
+                        <div class="menu-popup" id="vdo" style="display: none;">
+                            <iframe class="w-full aspect-video max-h-[450px]" src="https://www.youtube.com/embed/3_ROaNwDE9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-between block sm:hidden">
+                <div class="grid grid-cols-12 gap-4 mt-8 "  id="append_icon">
+
+                </div>
+                <div class="w-full mt-8 mb-8">
+                    <div class="player p-4 w-full">
+                        <div class="flex gap-4">
+                            <div class="w-[40%]">
+                                <img src="./music/autumn.jpeg" class="mx-auto w-[90px] h-[90px] rounded-[100%]" alt="">
+                            </div>
+                            <div class="w-[60%] mt-5">
+                                <div class="">Autumn</div>
+                                <div class="">Instrumental Music</div>
+                            </div>
+                        </div>
+                        <div class="volume-box">
+                            <span class="volume-down">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                                  </svg>
+                            </span>
+                            <input type="range" class="volume-range" step="1" value="80" min="0" max="100"
+                                oninput="music.volume = this.value/100">
+                            <span class="volume-up">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                  </svg>
+                            </span>
+                        </div>
+                        <div class="btn-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="repeat"  onclick="handleRepeat()" viewBox="0 0 16 16">
+                                <path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192Zm3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z"/>
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="play"onclick="handlePlay()" viewBox="0 0 16 16">
+                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="volume" onclick="handleVolume()" viewBox="0 0 16 16">
+                                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                                <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+                              </svg>
+                              <!-- <span class="play" onclick="handlePlay()">
+                                
+                              </span> -->
+                              
+                            <!-- <i class="material-icons repeat" onclick="handleRepeat()">repeat</i> -->
+                            <!-- <i class="material-icons volume" onclick="handleVolume()">volume_up</i> -->
+                        </div>
+                        <div class="music-box">
+                            <input type="range" step="1" class="seekbar" value="0" min="0" max="100" oninput="handleSeekBar()">
+                
+                            <audio class="music-element">
+                                <source src="./music/autumn.mp3" type="audio/mp3">
+                            </audio>
+                            <span class="current-time">0:0</span><span class="duration">0:0</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+   </div>
+
+
+  </div>
+  <script src="./script_data.js"></script>
+  <script>
+    function showMenu(idQuery) {        
+        const menuPopup = Array.from(document.querySelectorAll('.menu-popup'));
+        for (let index = 0; index < menuPopup.length; index++) {
+            menuPopup[index].style.display = 'none';
+        }
+        const queryShow = document.querySelector(idQuery);
+        queryShow.style.display = 'flex'
+    }
+
+    function openCloseMoreDetail() {
+        const model_popupID = document.getElementById("model-popup");
+
+        console.log(model_popupID.classList.contains('sm:hidden'));
+        if(model_popupID.classList.contains('sm:hidden') === true) {
+            model_popupID.classList.remove('sm:hidden');
+        }else{
+            model_popupID.classList.add('sm:hidden');
+        }
+
+        // if(model_popupID.style.display  === 'none') {
+        //     model_popupID.style.display = 'block'
+        // }else if(model_popupID.style.display  === 'block') {
+        //     model_popupID.style.display = 'none'
+        // }
+        showMenu('#paint')
+    }
+
+    function setImgPaint(imgSrc) {
+        const img_paint = document.querySelector('#img_paint');
+        img_paint.src = imgSrc
+    }
+    function setImgInterior(imgSrc) {
+        const img_interior = document.querySelector('#interior_img');
+        img_interior.src = imgSrc
+    }
+    
+    async function loadCar(index) {
+        const carIndex = 0
+        const brand = jsonData[index]
+        const carData = brand['models'][carIndex]
+        const iframe = document.querySelector('#vdo iframe');
+        iframe.src = carData.youtube_link
+        const model_price = document.querySelector('#model_price');
+        const model_name = document.querySelector('#model_name');
+        const brandDisplay = document.querySelector(`#display-brand${brand.brandimgID.toString()}`);
+        brandDisplay.style.display = 'block'
+        if(brand.brandimgID.toString() === '1') {
+            document.querySelector(`#display-brand2`).style.display = 'none';
+        }else if(brand.brandimgID.toString() === '2') {
+            document.querySelector(`#display-brand1`).style.display = 'none';
+        }
+        const brandDisplayImg = document.querySelector(`#display-brand${brand.brandimgID.toString()} img`);
+        const kmhDisplayImg = document.querySelector('#display-kmh img');
+        const carDisplayImg = document.querySelector('#display-car img');
+        const link_website_menu = document.querySelector('#link_website_menu');
+        
+        model_price.textContent = "+"+carData.start_price.toString()+" THB."
+        model_name.textContent = carData.name.toString()
+        brandDisplayImg.src = brand.brandImg
+        kmhDisplayImg.src = carData.speed_img
+        carDisplayImg.src = carData.img
+        link_website_menu.href = carData.links
+
+        const show_custom_enable = document.querySelector('#show_custom_enable');
+        const weblink_custom = document.querySelector('#weblink_custom');
+        weblink_custom.href = carData.links
+        weblink_custom.textContent = `${brand.brand.toLowerCase()} website`
+        show_custom_enable.style.display = (carData.interior_other === true) ? 'block' : 'none'
+
+        const show_custom_enable1 = document.querySelector('#show_custom_enable1');
+        const weblink_custom1 = document.querySelector('#weblink_custom1');
+        weblink_custom1.href = carData.links
+        weblink_custom1.textContent = `${brand.brand.toLowerCase()} website`
+        show_custom_enable1.style.display = (carData.car_other === true) ? 'block' : 'none'
+
+        setImgPaint(carData.color_car[0].colorImage);
+        setImgInterior(carData.color_interior[0].colorImage);
+
+        document.querySelector('#loop_paint').innerHTML = ''
+        for (let index = 0; index < carData.color_car.length; index++) {
+            const dataColor = carData.color_car[index];
+            document.querySelector('#loop_paint').innerHTML += `<button class="rounded-[50%] bg-[${dataColor.colorCode}] w-[30px] h-[30px] sm:w-[36px] sm:h-[36px] hover:opacity-80 mx-[5px]" onclick="setImgPaint('${dataColor.colorImage}')"></button>`
+        }
+        
+        document.querySelector('#detail-content').innerHTML = carData.detail
+
+        document.querySelector('#interior_img').src = carData.color_interior[0].colorImage;
+        document.querySelector('#loop_interior').innerHTML = ''
+        for (let index = 0; index < carData.color_interior.length; index++) {
+            const dataColor = carData.color_interior[index];
+            document.querySelector('#loop_interior').innerHTML += `<button class="rounded-[50%] bg-[${dataColor.colorCode}] w-[30px] h-[30px] sm:w-[36px] sm:h-[36px] hover:opacity-80 mx-[5px]" onclick="setImgInterior('${dataColor.colorImage}')"></button>`
+        }
+        const model_speed = document.querySelector('#model_speed');
+        let top_speed_now = 0
+
+        for (let i = 0; i < carData.top_speed; i++) {
+            top_speed_now = top_speed_now + 1;
+            // console.log(top_speed_now);
+            await new Promise(resolve => setTimeout(resolve, 1));
+            model_speed.textContent = top_speed_now.toString()
+        }
+    }
+
+    function loadIcon() {
+        for (let index = 0; index < jsonData.length; index++) {
+            const dataIcon = jsonData[index]
+            document.querySelector('#append_icon').innerHTML += `<div class="col-span-6">
+                        <div class="rounded-[26px] bg-[${dataIcon.bgCode}] w-[100%] p-3 mx-auto shadow-color" onclick="clickIcon(${index})">
+                            <img src="${dataIcon.icon}" class="w-full max-w-[100px] max-h-[100px] mx-auto" alt="ICON" srcset="">
+                        </div>
+                        </div>`
+        }
+    }
+
+    function clickIcon(index) {
+        loadCar(index)
+        goToSlide(index)
+    }
+
+    let load = setTimeout(function() {
+        const load_overlay = document.getElementById("load_overlay");
+        load_overlay.style.display = 'none'
+        loadCar(0)
+        loadIcon()
+    }, 1500);
+
+    const carousel = document.querySelector('.carousel');
+    const carouselInner = carousel.querySelector('.carousel-inner');
+    const slides = Array.from(carouselInner.querySelectorAll('.carousel-slide'));
+    let currentIndex = 0;
+    let touchStartX = null;
+    let touchEndX = null;
+
+    function goToSlide(index) {
+        // console.log(index);
+        const slideWidth = slides[0].offsetWidth;
+        // console.log(slideWidth);
+        loadCar(index)
+        currentIndex = index;
+        const offset = -currentIndex * slideWidth;
+        carouselInner.style.transform = `translateX(${offset}px)`;
+    }
+
+    function nextSlide() {
+        let slidetoshow = 0
+        if( (currentIndex >= (slides.length - 1)) ) {
+            slidetoshow = 0
+        }else{
+            slidetoshow = currentIndex + 1
+        }
+
+        goToSlide(slidetoshow);
+    }
+
+    function prevSlide() {
+        let slidetoshow = 0;
+        if (currentIndex <= 0) {
+            slidetoshow = slides.length - 1;
+        } else {
+            slidetoshow = currentIndex - 1;
+        }
+        goToSlide(slidetoshow);
+    }
+
+    document.querySelector('.prev-button').addEventListener('click', prevSlide);
+    document.querySelector('.next-button').addEventListener('click', nextSlide);
+    // setInterval(nextSlide, 5000);
+
+
+    // MUSCI //
+    let music = document.querySelector('.music-element')
+    let playBtn = document.querySelector('.play')
+    let seekbar = document.querySelector('.seekbar')
+    let currentTime = document.querySelector('.current-time')
+    let duration = document.querySelector('.duration')
+
+    function handlePlay() {
+        if (music.paused) {
+            music.play();
+            playBtn.className = 'pause'
+            playBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
+        <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+        </svg>`
+        } else {
+            music.pause();
+            playBtn.className = 'play'
+            playBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                              </svg>`
+        }
+        music.addEventListener('ended', function () {
+            playBtn.className = 'play'
+            playBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                              </svg>`
+            music.currentTime = 0
+        });
+    }
+
+    music.onloadeddata = function () {
+        seekbar.max = music.duration
+        let ds = parseInt(music.duration % 60)
+        let dm = parseInt((music.duration / 60) % 60)
+        duration.innerHTML = dm + ':' + ds
+    }
+    music.ontimeupdate = function () { seekbar.value = music.currentTime }
+    handleSeekBar = function () { music.currentTime = seekbar.value }
+    music.addEventListener('timeupdate', function () {
+        let cs = parseInt(music.currentTime % 60)
+        let cm = parseInt((music.currentTime / 60) % 60)
+        currentTime.innerHTML = cm + ':' + cs
+    }, false)
+
+
+    // like
+    let favIcon = document.querySelector('.favorite')
+    function handleFavorite() {
+        favIcon.classList.toggle('active');
+    }
+
+
+    // repeat
+    let repIcon = document.querySelector('.repeat')
+    function handleRepeat() {
+        if (music.loop == true) {
+            music.loop = false
+            repIcon.classList.toggle('active')
+        }
+        else {
+            music.loop = true
+            repIcon.classList.toggle('active')
+        }
+    }
+
+    // volume
+    let volIcon = document.querySelector('.volume')
+    let volBox = document.querySelector('.volume-box')
+    let volumeRange = document.querySelector('.volume-range')
+    let volumeDown = document.querySelector('.volume-down')
+    let volumeUp = document.querySelector('.volume-up')
+
+    function handleVolume() {
+        volIcon.classList.toggle('active')
+        volBox.classList.toggle('active')
+    }
+
+    volumeDown.addEventListener('click', handleVolumeDown);
+    volumeUp.addEventListener('click', handleVolumeUp);
+
+    function handleVolumeDown() {
+        volumeRange.value = Number(volumeRange.value) - 20
+        music.volume = volumeRange.value / 100
+    }
+    function handleVolumeUp() {
+        volumeRange.value = Number(volumeRange.value) + 20
+        music.volume = volumeRange.value / 100
+    }
+    
+  </script>
+  
+</body>
+</html>
+
