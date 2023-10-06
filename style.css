@@ -385,3 +385,15 @@ svg.arrow-left:hover , svg.arrow-right:hover {
     font-size: 12px;
     color: #72646f;
 }
+
+.box-auth-signin {
+    border-radius: 10px;
+    background-color: #a1d586;
+    box-shadow: 0 15px 20px 0 rgba(109, 109, 109, 0.6);
+}
+
+.box-auth-signup {
+    border-radius: 10px;
+    background-color: #fdd7a9;
+    box-shadow: 0 15px 20px 0 rgba(109, 109, 109, 0.6);
+}

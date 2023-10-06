@@ -38,6 +38,87 @@
     </div>
   <div class="container h-full w-full mx-auto">
    <div class="h-full w-full m-auto relative ">
+
+        <div class="absolute z-[999995] bg-[#666666] rounded-xl shadow-lg  p-5 w-[90%] mx-auto top-[50px] left-[50%] translate-x-[-50%]" id="signup-modal" style="display: none;">
+            <div class="flex justify-between">
+                <h1 class="p-2.5">Sign Up</h1>
+                <button type="button" onclick="closeModalAuth()" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Close</button>
+            </div>
+            <hr />
+            <form action="processform.php" method="post">
+                <div class="mt-6 mb-6">
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username (Email)</label>
+                    <input type="email" id="email" name="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="example@example.com" required>
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                    <input type="password" id="password" name="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                </div>
+                <div class="mb-6">
+                    <label for="repassword" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Re-Password</label>
+                    <input type="password" id="repassword" name="repassword" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                </div>
+                <div class="flex justify-between gap-4 mb-6">
+                    <div>
+                        <label for="birthdayDay" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Day</label>
+                        <select select id="birthdayDay" name="day" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Choose day</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="birthdayMonth" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Month</label>
+                        <select select id="birthdayMonth" name="month" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Choose month</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="birthdayYear" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Year</label>
+                        <select select id="birthdayYear" name="year" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Choose year</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mobile Phone</label>
+                    <div class="flex gap-4">
+                        <div class="p-2.5">+66</div>
+                        <input type="text" id="phone" name="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" minlength="9" maxlength="9" required>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <button type="submit" name="signup" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">SignUP</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- ===== -->
+        <!-- ===== -->
+        <!-- ===== -->
+        <div class="absolute z-[999995] bg-[#666666] rounded-xl shadow-lg  p-5 w-[90%] mx-auto top-[50px] left-[50%] translate-x-[-50%]" id="signin-modal" style="display: none;">
+            <div class="flex justify-between">
+                <h1 class="p-2.5">Sign In</h1>
+                <button type="button" onclick="closeModalAuth()" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Close</button>
+            </div>
+            <hr />
+            <form action="processform.php" method="post">
+                <div class="mt-6 mb-6">
+                    <label for="signInemail" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username (Email)</label>
+                    <input type="email" id="signInemail" name="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="example@example.com" required>
+                </div>
+                <div class="mb-6">
+                    <label for="signInpassword" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                    <input type="password" id="signInpassword" name="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                </div>
+                <div class="mb-6">
+                    <button type="submit" name="signin" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">SignIn</button>
+                </div>
+            </form>
+        </div>
+        <!-- ===== -->
+        <!-- ===== -->
+        <!-- ===== -->
+
+
         <div class="hidden sm:flex flex-col w-full h-full">
             <div class="relative mt-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1030" height="87" viewBox="0 0 1030 87" fill="none" class="svg-line rotate-180">
@@ -289,12 +370,25 @@
                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                         </svg>
                     </button>
-                  </div>      
+                  </div>    
+                  
+                  
             </div>
+            <div class="flex flex-row gap-4 w-full h-full mt-8 mb-8">
+                <div class="box-auth-signin w-[50%]" id="signin-mini" onclick="showModalAuth('signin')">
+                    <div class="text-center p-5">
+                        SIGN-IN
+                    </div>
+                </div>
+                <div class="box-auth-signup w-[50%]" id="signup-mini" onclick="showModalAuth('signup')">
+                    <div class="text-center p-5">
+                        SIGN-UP
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="flex sm:hidden">
-            
-        </div>
+        
 
         <div id="model-popup" class="absolute z-[9999] top-[0px] p-2 sm:p-5 w-full block sm:hidden">
             <div class="model-box w-full max-h-[550px] boder-model relative overflow-auto">
@@ -387,6 +481,20 @@
                     </div>
                 </div>
             </div>
+
+            <div class="flex flex-row gap-4 w-full h-full mt-8 sm:hidden">
+                <div class="box-auth-signin w-[50%]" id="signin-mini" onclick="showModalAuth('signin')">
+                    <div class="text-center p-5">
+                        SIGN-IN
+                    </div>
+                </div>
+                <div class="box-auth-signup w-[50%]" id="signup-mini" onclick="showModalAuth('signup')">
+                    <div class="text-center p-5">
+                        SIGN-UP
+                    </div>
+                </div>
+            </div>
+
             <div class="flex flex-col justify-between block sm:hidden">
                 <div class="grid grid-cols-12 gap-4 mt-8 "  id="append_icon">
 
@@ -455,6 +563,40 @@
   </div>
   <script src="./script_data.js"></script>
   <script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const day = document.getElementById("birthdayDay");
+        const month = document.getElementById("birthdayMonth");
+        const year = document.getElementById("birthdayYear");
+
+        for (let i = 1; i <= 31; i++) {
+          day.innerHTML += `<option value="${i}">${i}</option>`;
+        }
+
+        for (let i = 1; i <= 12; i++) {
+          month.innerHTML += `<option value="${i}">${i}</option>`;
+        }
+
+        for (let i = 1850; i <= 2023; i++) {
+          year.innerHTML += `<option value="${i}">${i}</option>`;
+        }
+    });
+
+    function showModalAuth(type) {
+        if(type === 'signin') {
+            document.getElementById("signup-modal").style.display = 'none'
+            document.getElementById("signin-modal").style.display = 'block'
+        }else if(type === 'signup') {
+            document.getElementById("signup-modal").style.display = 'block'
+            document.getElementById("signin-modal").style.display = 'none'
+        }
+    }
+    function closeModalAuth() {
+        document.getElementById("signup-modal").style.display = 'none'
+        document.getElementById("signin-modal").style.display = 'none'
+    }
+
+
     function showMenu(idQuery) {        
         const menuPopup = Array.from(document.querySelectorAll('.menu-popup'));
         for (let index = 0; index < menuPopup.length; index++) {
